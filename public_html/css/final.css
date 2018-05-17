@@ -1,0 +1,607 @@
+/*
+    Created on : 2015.8.6, 20:03:18
+    Author     : Ilze
+*/
+
+body {
+  font-family: Open Sans;
+  min-width: 1200px;
+  padding-top: 110px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container:before, .container:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.container:after {
+  clear: both;
+}
+
+.logo img {
+  margin: 25px;
+}
+
+.poga {
+  display: inline-block;
+}
+
+.poga a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 12px;
+  outline: none;
+}
+
+.poga a:hover {
+  background: #5b4d3b;
+}
+
+.header {
+  background: #473a2d;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 110px;
+}
+
+.menu-navigation li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.menu-navigation {
+  float: right;
+  padding-top: 10px;
+}
+
+.menu-navigation ul {
+  padding: 0px;
+}
+
+.main {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main {
+  padding-right: 15px;
+}
+
+/*  ***************** SLIDER *****************  */
+
+.slider-content-1 h1 {
+  font-weight: normal;
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: absolute;
+  top: 200px;
+  left: 180px;
+}
+
+.slider-content-1 h3 {
+  font-weight: normal;
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: absolute;
+  top: 290px;
+  left: 180px;
+}
+
+.slider-content-2 h1 {
+  font-weight: normal;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: absolute;
+  top: 200px;
+  left: 180px;
+}
+
+.slider-content-2 h3 {
+  font-weight: normal;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: absolute;
+  top: 285px;
+  left: 180px;
+}
+
+.slider-content-3 h1 {
+  font-weight: normal;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: absolute;
+  top: 240px;
+  right: 180px;
+}
+
+.slider-content-3 h3 {
+  font-weight: normal;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: absolute;
+  top: 325px;
+  right: 180px;
+  text-align: right;
+}
+
+.slider {
+  height: 594px;
+}
+
+.slider_button {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50px;
+  display: inline-block;
+  opacity: 0.4;
+}
+
+.slider_button_nav {
+  position: absolute;
+  z-index: 1;
+  top: 620px;
+  left: 47%;
+}
+
+.sliderItem {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 594px;
+}
+
+.sliderItem.first {
+  background: url(../img/slider1.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.sliderItem.second {
+  background: url(../img/slider2.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.sliderItem.third {
+  background: url(../img/slider3.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.arrows {
+  position: relative;
+  z-index: 1;
+}
+
+.arrow {
+  height: 70px;
+  margin-top: 240px;
+  opacity: 0.5;
+}
+
+.arrow.right {
+  float: right;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.arrow.left {
+  float: left;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/*  *************** partaisitais ******************  */
+
+.dots-container {
+  position: absolute;
+  z-index: 1;
+  top: 610px;
+  left: 47%;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  border: none;
+  margin: 3px;
+}
+
+.dot.is-active {
+  background-color: rgba(255, 255, 255, 0.63);
+}
+
+.is-active {
+  visibility: visible;
+  background-color: rgba(255, 255, 255, 0.63);
+}
+
+/*  ***************** PAKALPOJUMI *******************  */
+
+.pakalpojumi {
+  background: #f9f6ed url(../img/bcg.png) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.pakalpojumi h1 {
+  text-transform: uppercase;
+  color: #95782d;
+  text-align: center;
+  font-family: Open Sans semibold;
+  border-bottom: thin dotted;
+  padding-bottom: 10px;
+}
+
+.pakalpojumi hr {
+  color: #95782d;
+  border-style: dotted;
+}
+
+.pakalpojumi-text h3 {
+  font-family: Open Sans semibold;
+  text-transform: uppercase;
+  color: #473a15;
+  margin-top: -3px;
+}
+
+.pakalpojumi-text p {
+  color: #473a15;
+}
+
+.pakalpojumi-text hr {
+  border: 1px solid #c6c3bd;
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
+.pakalpojumi-icon {
+  float: left;
+  padding-right: 5px;
+}
+
+.pakalpojumi-text {
+  overflow: hidden;
+  padding: 0 10px 30px 10px;
+}
+
+.row::after {
+  content: "  ";
+  display: table;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+  float: none;
+}
+
+.col-1-3 {
+  width: 33.333%;
+  float: left;
+}
+
+/*  ***************** PAR MUMS ********************  */
+
+.par-mums {
+  background-color: #72593b;
+}
+
+.par-mums h1 {
+  text-transform: uppercase;
+  color: #c7a457;
+  text-align: center;
+  font-family: Open Sans semibold;
+  border-bottom: thin dotted;
+  padding-bottom: 10px;
+}
+
+.ievads p {
+  color: #fff;
+  text-align: justify;
+  line-height: 180%;
+}
+
+.row::after {
+  content: "  ";
+  display: table;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+  float: none;
+}
+
+.tomass {
+  width: 50%;
+  float: left;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+}
+
+.edgars {
+  width: 50%;
+  float: left;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  padding-right: 30px;
+}
+
+.ed-info {
+  text-align: center;
+}
+
+.ed-info h2 {
+  border-bottom: 1px solid rgb(123, 102, 76);
+  padding-bottom: 10px;
+}
+
+.ed-info h2, .ed-info p {
+  color: #c7a457;
+  text-transform: capitalize;
+}
+
+.ed-info p {
+  line-height: 10%;
+}
+
+.ed-info a {
+  text-decoration: none;
+  color: #c7a457;
+  line-height: 10%;
+}
+
+.ed-info img {
+  border: 8px solid #97804e;
+  border-radius: 100%;
+}
+
+.sertifikats {
+  background-color: #624e36;
+  padding: 10px 45px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sertifikats li {
+  color: #fff;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 49%;
+  font-size: 14px;
+  text-align: left;
+  padding: 5px 5px 5px 50px;
+  background: url(../img/sertifikats.png) 0 5px no-repeat;
+  min-height: 50px;
+  font-size: 13px;
+}
+
+.teksts {
+  color: #fff;
+  line-height: 180%;
+}
+
+/*  ***************** KLIENTI ********************  */
+
+.klienti {
+  background-color: #f9f6ee;
+  text-align: justify;
+  padding-bottom: 50px;
+}
+
+.klienti h1 {
+  text-transform: uppercase;
+  color: #95782d;
+  text-align: center;
+  font-family: Open Sans semibold;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: thin dotted;
+}
+
+.klienti hr {
+  color: #95782d;
+  border-style: dotted;
+}
+
+.klienti .container img {
+  padding: 31px;
+}
+
+.klienti img {
+  -webkit-filter: saturate(0%);
+  filter: saturate(0%);
+}
+
+.klienti img:hover {
+  -webkit-filter: saturate(100%);
+  filter: saturate(100%);
+}
+
+.up {
+  position: fixed;
+  right: 20px;
+  bottom: 5%;
+  opacity: 0.5;
+}
+
+/*  ***************** KONTAKTI ********************  */
+
+.kontakti {
+  background-color: #72593b;
+  padding-bottom: 50px;
+  height: 580px;
+}
+
+.kontakti h1 {
+  text-transform: uppercase;
+  color: #cbaa63;
+  text-align: center;
+  font-family: Open Sans semibold;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  border-bottom: thin dotted;
+}
+
+.row::after {
+  content: "  ";
+  display: table;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+  float: none;
+}
+
+.karte, .forma {
+  width: 35%;
+  float: left;
+}
+
+.adrese {
+  width: 30%;
+  float: left;
+}
+
+.adrese img {
+  margin-top: 37px;
+  padding-bottom: 10px;
+}
+
+.karte {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border: 5px solid #cbaa63;
+}
+
+#googleMap {
+  width: 410px;
+  height: 280px;
+  background-color: #CCC;
+}
+
+.adrese {
+  text-align: center;
+  line-height: 80%;
+}
+
+.vm {
+  color: #cbaa63;
+  text-transform: uppercase;
+}
+
+.telefons, .telefons a {
+  color: #eacc8b;
+  font-family: Open Sans semibold;
+  text-decoration: none;
+}
+
+.mail a, .mail p {
+  color: #cbaa63;
+  text-decoration: none;
+}
+
+.adr {
+  color: #cbaa63;
+}
+
+.forma p {
+  color: #eacc8b;
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.forma input {
+  background-color: #7f6c42;
+  color: #cbaa83;
+  border: none;
+  margin-right: 12px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 39px;
+  text-indent: 20px;
+  font-size: 13px;
+}
+
+textarea {
+  background-color: #7f6c42;
+  min-height: 140px;
+  min-width: 97%;
+  color: #cbaa83;
+  border: none;
+  margin-top: 20px;
+  font-size: 13px;
+  text-indent: 17px;
+  padding-top: 9px;
+}
+
+input:focus {
+  outline: 1px solid #cbaa63;
+}
+
+textarea:focus {
+  outline: 1px solid #cbaa63;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #cbaa63;
+  font-size: 14px;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #cbaa63;
+  font-size: 14px;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #cbaa63;
+  font-size: 14px;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #cbaa63;
+  font-size: 14px;
+}
+
+.send input {
+  background-color: #b1965c;
+  color: #fff;
+  font-size: 15px;
+  margin-top: 20px;
+  padding: 12px 35px;
+  text-indent: inherit;
+}
+
+.error-place {
+  color: #ffb732;
+  margin: 15px 0;
+}
+
+.owl-controls {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
